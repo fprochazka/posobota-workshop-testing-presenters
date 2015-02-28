@@ -1,0 +1,11 @@
+{* This is the welcome page, you can delete it *}
+
+{block content}
+<h1>Muj uzasny blog</h1>
+
+<div n:foreach="$articles as $article" class="article">
+	<h2>{$article->title}</h2>
+	<p>
+		{$article->content|noescape|nl2br|escape}
+	</p>
+</div>
